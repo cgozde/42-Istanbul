@@ -1,13 +1,26 @@
-#include "libft.h"
-void    *ft_memset (void *s, int c, size_t len)
-{
-    char *p;
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/21 19:25:30 by cuyar             #+#    #+#             */
+/*   Updated: 2023/12/21 19:35:06 by cuyar            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-    p = (char *)s;
-    while(len > 0)
-    {
-        p[len-1] = c; //p[len-1] p işaretçisinin gösterdiği bellek bloğunun sonuncu byte'ıdır.
-        len--;
-    }
-    return (s); //başlangıç adresini döndür.
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t len)
+{
+	char	*p;
+
+	p = (char *)s;
+	while (len > 0)
+	{
+		p[len - 1] = c;
+		len--;
+	}
+	return (s);
 }

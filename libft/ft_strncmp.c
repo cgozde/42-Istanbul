@@ -1,25 +1,26 @@
-#include "libft.h"
-int ft_strncmp (const char *s1, const char *s2, int n)
-{
-    int i;
-    i = 0;
-    while (s1[i])
-    {
-        return (*s1 - *s2);
-        n--;
-    }
-    return 0;
-}
-/*#include <stdio.h>
-#include <string.h>
-int main()
-{
-    const char *s1;
-    const char *s2;
-    s1 = "cemreeueuru";
-    s2= "ieri";
-    printf("%d\n",ft_strncmp(s1,s2,5));
-    printf("%d",strncmp(s1,s2,5));
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/21 19:11:06 by cuyar             #+#    #+#             */
+/*   Updated: 2023/12/21 19:45:54 by cuyar            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "libft.h"
+
+int	ft_strncmp(const char *s1, const char *s2, int n)
+{
+	int	i;
+
+	i = 0;
+	while (s1[i])
+	{
+		return (*s1 - *s2);
+		n--;
+	}
+	return (0);
 }
-*/

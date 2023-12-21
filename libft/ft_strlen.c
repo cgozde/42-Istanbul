@@ -6,11 +6,12 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 15:43:14 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/09 17:50:01 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/21 19:44:08 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 int	ft_strlen(const char *str)
 {
 	int	i;

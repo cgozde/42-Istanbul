@@ -6,11 +6,12 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 17:25:33 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/09 17:50:04 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/21 19:37:43 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char	*ft_strchr(const char *str, int c)
 {
 	int	i;
