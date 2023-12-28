@@ -6,7 +6,7 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:12:04 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/21 19:46:43 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/28 17:44:17 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t n)
 
 	i = 0;
 	j = 0;
-	if (little == '\0' || little[0] == '\0')
+	if (little[0] == '\0')
 		return ((char *)big);
 	while (big[i] != '\0' && i < n)
 	{

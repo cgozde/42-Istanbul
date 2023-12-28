@@ -6,7 +6,7 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/25 14:05:32 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/25 16:36:43 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/28 17:35:53 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_itoa(int n)
 	size_t	len;
 	char	*result;
 
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	len = digit_counter(n);
 	result = (char *)malloc(len + 1);
 	if (!result)
