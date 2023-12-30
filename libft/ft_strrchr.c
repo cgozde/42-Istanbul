@@ -6,7 +6,7 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 17:39:10 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/21 19:46:50 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/30 15:59:04 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,20 +18,12 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = 0;
 	while (s[i])
-	{
 		i++;
-	}
 	while (i >= 0)
 	{
 		if (s[i] == (char)c)
-		{
 			return ((char *)(s + i));
-		}
 		i--;
-	}
-	if (s[i] == '\0')
-	{
-		return ((char *)(s + i));
 	}
 	return (0);
 }

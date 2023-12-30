@@ -6,7 +6,7 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:25:18 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/21 19:27:59 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/30 15:14:28 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	d = (char *)dest;
 	s = (char *)src;
 	i = 0;
+	if (!dest && !src)
+		return (0);
 	while (i < n)
 	{
 		d[i] = s[i];

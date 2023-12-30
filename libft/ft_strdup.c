@@ -6,7 +6,7 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 14:11:08 by cuyar             #+#    #+#             */
-/*   Updated: 2023/12/21 14:29:44 by cuyar            ###   ########.fr       */
+/*   Updated: 2023/12/30 15:12:07 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strdup(const char *s)
 	i = 0;
 	j = ft_strlen(s);
 	str = (char *)malloc(sizeof(*str) * (j + 1));
+	if (!str)
+		return (NULL);
 	while (i < j)
 	{
 		str[i] = s[i];
