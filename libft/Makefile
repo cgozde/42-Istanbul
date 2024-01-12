@@ -15,7 +15,6 @@ SRC =	ft_isalpha.c \
 		ft_isalnum.c \
 		ft_isascii.c \
 		ft_isprint.c \
-		ft_isprint.c \
 		ft_strlen.c \
 		ft_atoi.c \
 		ft_memset.c \
@@ -54,8 +53,7 @@ NAME=	libft.a
 
 OBJS=	$(SRC:.c=.o)
 
-$(NAME):
-	$(CC) $(FLAGS) -c $(SRC)
+$(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 
@@ -65,6 +63,5 @@ clean:
 	rm -f $(OBJS)
 fclean:	clean
 	rm -f $(NAME)
-re: 
-	fclean all
+re: fclean all
 .PHONY:	all, clean, fclean, re
