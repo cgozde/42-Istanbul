@@ -6,7 +6,7 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 15:15:04 by cuyar             #+#    #+#             */
-/*   Updated: 2024/02/08 17:06:19 by cuyar            ###   ########.fr       */
+/*   Updated: 2024/02/08 18:05:14 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-int	ft_pustr(char *s);
+int	ft_putstr(char *s);
 int	ft_putchar(char c);
 int	ft_control(va_list arg, char c);
 int	ft_putnbr(long n);

@@ -6,19 +6,20 @@
 /*   By: cuyar <cuyar@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 15:14:44 by cuyar             #+#    #+#             */
-/*   Updated: 2024/02/08 17:26:47 by cuyar            ###   ########.fr       */
+/*   Updated: 2024/02/08 18:06:50 by cuyar            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
 int	ft_printf(const char *str, ...)
 {
-	va_list arg;
-	int	len;
-	
+	va_list	arg;
+	int		len;
+
 	va_start(arg, str);
 	len = 0;
-	while(*str)
+	while (*str)
 	{
 		if (*str == '%')
 		{
@@ -31,14 +32,14 @@ int	ft_printf(const char *str, ...)
 			str++;
 		}
 	}
-	va_end(arg);
-	return(len);
+	va_end (arg);
+	return (len);
 }
 
 int	ft_control(va_list arg, char c)
 {
 	int	len;
-	
+
 	len = 0;
 	if (c == 'c')
 		len += ft_putchar(va_arg(arg, int));
@@ -61,12 +62,3 @@ int	ft_control(va_list arg, char c)
 		len += ft_putchar('%');
 	return (len);
 }
-
-/* int main(void)
-{
-	char a[] = "cemre";
-	int m = 7;
-	ft_printf("%d\n", ft_printf("%s %d", a, b));
-}
-*/
-
